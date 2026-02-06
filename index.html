@@ -163,23 +163,8 @@
         }
 
         .hero h1 {
-            font-size: clamp(3rem, 8vw, 5.5rem);
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 30px;
-            letter-spacing: -0.02em;
-        }
-
-        .hero h1 .highlight {
-            background: linear-gradient(135deg, #9d7ff5 0%, #7b68ee 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero h1 {
             font-family: 'Syne', sans-serif;
-            font-size: clamp(3rem, 8vw, 6rem);
+            font-size: clamp(2.5rem, 7vw, 4.5rem);
             font-weight: 800;
             line-height: 1.1;
             margin-bottom: 30px;
@@ -511,6 +496,11 @@
             stroke-width: 2;
             stroke-linecap: round;
         }
+
+        @keyframes rotate-border {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
@@ -591,7 +581,7 @@
         <canvas id="neuralCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></canvas>
         
         <div class="fade-up" style="position: relative; z-index: 2;">
-            <h2 style="font-family: 'Syne', sans-serif; font-size: 3rem; font-weight: 800; margin-bottom: 20px; text-align: center; color: #ffffff; text-shadow: 0 0 20px rgba(157, 127, 245, 0.3); letter-spacing: -0.02em;">About Me</h2>
+            <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; font-weight: 800; margin-bottom: 20px; text-align: center; color: #ffffff; text-shadow: 0 0 20px rgba(157, 127, 245, 0.3); letter-spacing: -0.02em;">About Me</h2>
             <p style="color: #c8d6e5; text-align: center; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem; line-height: 1.8; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);">
                 Passionate data professional with expertise in transforming complex datasets into actionable insights.
             </p>
@@ -607,20 +597,13 @@
                 <!-- Profile Image Placeholder -->
                 <div style="position: relative; width: 100%; height: 100%; border-radius: 50%; background: linear-gradient(135deg, rgba(157, 127, 245, 0.2), rgba(123, 104, 238, 0.2)); display: flex; align-items: center; justify-content: center; overflow: hidden; border: 3px solid #9d7ff5;">
                     <!-- Replace this with your actual image -->
-                    <img src="your-photo.jpg" alt="Your Name" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <img src="your-photo.jpg" alt="Sunil Kumar" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <!-- Placeholder if no image -->
                     <div style="display: none; flex-direction: column; align-items: center; justify-content: center; color: #9d7ff5; font-size: 4rem;">
                         👤
                         <p style="font-size: 0.9rem; margin-top: 10px; color: #8b9cb6;">Add your photo</p>
                     </div>
                 </div>
-                
-                <style>
-                    @keyframes rotate-border {
-                        0% { transform: rotate(0deg); }
-                        100% { transform: rotate(360deg); }
-                    }
-                </style>
             </div>
         </div>
         
@@ -646,7 +629,7 @@
         <canvas class="neural-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></canvas>
         
         <div class="fade-up" style="position: relative; z-index: 2;">
-            <h2 style="font-family: 'Syne', sans-serif; font-size: 3rem; font-weight: 800; margin-bottom: 20px; text-align: center; color: #ffffff; text-shadow: 0 0 20px rgba(157, 127, 245, 0.3); letter-spacing: -0.02em;">Skills</h2>
+            <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; font-weight: 800; margin-bottom: 20px; text-align: center; color: #ffffff; text-shadow: 0 0 20px rgba(157, 127, 245, 0.3); letter-spacing: -0.02em;">Skills</h2>
             <p style="color: #c8d6e5; text-align: center; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem; line-height: 1.8; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);">
                 Technical expertise across the data science and analytics stack.
             </p>
@@ -677,7 +660,7 @@
         <canvas class="neural-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></canvas>
         
         <div class="fade-up" style="position: relative; z-index: 2;">
-            <h2 style="font-family: 'Syne', sans-serif; font-size: 3rem; font-weight: 800; margin-bottom: 20px; text-align: center; color: #ffffff; text-shadow: 0 0 20px rgba(157, 127, 245, 0.3); letter-spacing: -0.02em;">Projects</h2>
+            <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; font-weight: 800; margin-bottom: 20px; text-align: center; color: #ffffff; text-shadow: 0 0 20px rgba(157, 127, 245, 0.3); letter-spacing: -0.02em;">Projects</h2>
             <p style="color: #c8d6e5; text-align: center; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem; line-height: 1.8; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);">
                 Showcase of my recent work and achievements.
             </p>
@@ -693,7 +676,7 @@
                         <span style="background: rgba(157, 127, 245, 0.1); color: #9d7ff5; padding: 5px 12px; border-radius: 20px; font-size: 0.85rem;">Tableau</span>
                         <span style="background: rgba(157, 127, 245, 0.1); color: #9d7ff5; padding: 5px 12px; border-radius: 20px; font-size: 0.85rem;">SQL</span>
                     </div>
-                    <a href="https://github.com/yourusername/project1" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: rgba(157, 127, 245, 0.1); border: 1px solid #9d7ff5; color: #9d7ff5; text-decoration: none; border-radius: 6px; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.background='#9d7ff5'; this.style.color='#0a1628'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(157, 127, 245, 0.4)';" onmouseout="this.style.background='rgba(157, 127, 245, 0.1)'; this.style.color='#9d7ff5'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                    <a href="https://github.com/yourusername/project1" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: rgba(157, 127, 245, 0.1); border: 1px solid #9d7ff5; color: #9d7ff5; text-decoration: none; border-radius: 6px; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease;">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
                         </svg>
@@ -805,7 +788,7 @@
         <canvas class="neural-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></canvas>
         
         <div class="fade-up" style="position: relative; z-index: 2;">
-            <h2 style="font-family: 'Syne', sans-serif; font-size: 3rem; font-weight: 800; margin-bottom: 20px; text-align: center; color: #ffffff; text-shadow: 0 0 20px rgba(157, 127, 245, 0.3); letter-spacing: -0.02em;">Certificates</h2>
+            <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; font-weight: 800; margin-bottom: 20px; text-align: center; color: #ffffff; text-shadow: 0 0 20px rgba(157, 127, 245, 0.3); letter-spacing: -0.02em;">Certificates</h2>
             <p style="color: #c8d6e5; text-align: center; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem; line-height: 1.8; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);">
                 Professional certifications and achievements.
             </p>
@@ -903,7 +886,7 @@
         <canvas class="neural-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></canvas>
         
         <div class="fade-up" style="position: relative; z-index: 2;">
-            <h2 style="font-family: 'Syne', sans-serif; font-size: 3rem; font-weight: 800; margin-bottom: 20px; color: #ffffff; text-shadow: 0 0 20px rgba(157, 127, 245, 0.3); letter-spacing: -0.02em;">Let's Work Together</h2>
+            <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; font-weight: 800; margin-bottom: 20px; color: #ffffff; text-shadow: 0 0 20px rgba(157, 127, 245, 0.3); letter-spacing: -0.02em;">Let's Work Together</h2>
             <p style="color: #c8d6e5; font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);">
                 Have a project in mind? Let's discuss how we can turn your data into insights.
             </p>
@@ -963,7 +946,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2026 Your Name. All rights reserved.</p>
+            <p>&copy; 2026 Sunil Kumar. All rights reserved.</p>
         </div>
     </footer>
 
@@ -972,7 +955,7 @@
         const roles = [
             'Data Analysis',
             'Machine Learning',
-            'SQL Sever Management',
+            'SQL Server Management',
             'Data Visualization Tools',
             'UI/UX Design'
         ];
@@ -987,31 +970,25 @@
             const currentRole = roles[roleIndex];
             
             if (isDeleting) {
-                // Deleting text - smoother and faster
                 typingText.textContent = currentRole.substring(0, charIndex - 1);
                 charIndex--;
             } else {
-                // Typing text - smooth character by character
                 typingText.textContent = currentRole.substring(0, charIndex + 1);
                 charIndex++;
             }
             
-            // Dynamic typing speed for smoother feel
             let typingSpeed;
             
             if (isDeleting) {
-                typingSpeed = 50; // Faster deletion for smooth effect
+                typingSpeed = 50;
             } else {
-                typingSpeed = 100; // Smooth typing speed
+                typingSpeed = 100;
             }
             
-            // When word is complete
             if (!isDeleting && charIndex === currentRole.length) {
-                // Pause at end of word
                 typingSpeed = 1500;
                 isDeleting = true;
             } else if (isDeleting && charIndex === 0) {
-                // Move to next word with brief pause
                 isDeleting = false;
                 roleIndex = (roleIndex + 1) % roles.length;
                 typingSpeed = 300;
@@ -1020,7 +997,6 @@
             setTimeout(type, typingSpeed);
         }
         
-        // Start typing animation when page loads
         setTimeout(type, 800);
 
         // Scroll animation observer
@@ -1037,7 +1013,6 @@
             });
         }, observerOptions);
 
-        // Observe all fade-up elements
         document.querySelectorAll('.fade-up').forEach(el => {
             observer.observe(el);
         });
@@ -1050,7 +1025,6 @@
             navLinks.classList.toggle('active');
         });
 
-        // Close mobile menu when clicking a link
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -1093,7 +1067,7 @@
             });
         });
 
-        // Neural Network Background Animation - Apply to all sections
+        // Neural Network Background Animation
         const canvases = document.querySelectorAll('.neural-canvas, #neuralCanvas');
         
         canvases.forEach(canvas => {
@@ -1128,7 +1102,6 @@
             function drawParticles() {
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-                // Draw connections
                 for (let i = 0; i < particles.length; i++) {
                     for (let j = i + 1; j < particles.length; j++) {
                         const dx = particles[i].x - particles[j].x;
@@ -1147,25 +1120,20 @@
                     }
                 }
 
-                // Draw and update particles
                 particles.forEach(particle => {
-                    // Draw particle
                     ctx.beginPath();
                     ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
                     ctx.fillStyle = '#7b68ee';
                     ctx.fill();
 
-                    // Add glow
                     ctx.shadowBlur = 10;
                     ctx.shadowColor = '#7b68ee';
                     ctx.fill();
                     ctx.shadowBlur = 0;
 
-                    // Update position
                     particle.x += particle.vx;
                     particle.y += particle.vy;
 
-                    // Bounce off edges
                     if (particle.x < 0 || particle.x > canvas.width) particle.vx *= -1;
                     if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1;
                 });
@@ -1179,13 +1147,11 @@
             window.addEventListener('resize', resizeCanvas);
         });
 
-        // Add hover effects to all project and certificate buttons
+        // Add hover effects to buttons
         document.addEventListener('DOMContentLoaded', function() {
-            // Get all buttons in projects and certificates sections
             const projectButtons = document.querySelectorAll('#projects a[href*="github"]');
             const certButtons = document.querySelectorAll('#certificates a[href*="credly"], #certificates a[href*="coursera"]');
             
-            // Add hover effect to GitHub buttons
             projectButtons.forEach(button => {
                 button.addEventListener('mouseenter', function() {
                     this.style.background = '#9d7ff5';
@@ -1202,7 +1168,6 @@
                 });
             });
             
-            // Add hover effect to Verify Credentials buttons
             certButtons.forEach(button => {
                 button.addEventListener('mouseenter', function() {
                     this.style.background = '#9d7ff5';
